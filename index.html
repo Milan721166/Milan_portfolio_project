@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#html" style="cursor: pointer;" class="logo">Portfolio</a>
+
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <nav class="navbar" id="navbar">
+            <a href="#" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About</a> <!-- Link to About section -->
+            <a href="#" style="--i:3">Skills</a>
+            <a href="#" style="--i:4">Contact</a>
+            <a href="#" style="--i:5">Download CV</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">
+        <div class="home-content">
+            <div class="profile-container">
+                <img src="/images/image.png" alt="Milan" class="profile-pic">
+                <div class="profile-text">
+                    <h3>Hello, It's Me</h3>
+                    <h1>Milan Sahoo</h1>
+                    <h3>And I'm a <span class="text"></span></h3>
+                    <p>
+                        I'm a Web Designer with expertise in creating and designing websites, Frontend, Backend, and much more.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="home-sci">
+                <a href="#" style="--i:4" class="active"><i class='bx bxl-facebook'></i></a>
+                <a href="#" style="--i:3" class="active"><i class='bx bxl-instagram'></i></a>
+                <a href="#" style="--i:2" class="active"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" style="--i:1" class="active"><i class='bx bxl-github'></i></a>
+            </div>
+            <a href="#" class="btn-box">More About Me</a>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <section id="about" class="about">
+            <div class="about-content">
+                <h2 id="about-me">About Me</h2>
+            </div>
+            <p class="about-line">I am Milan Sahoo, a Junior Software Developer passionate about creating impactful solutions using cutting-edge technologies.</p>
+            <p class="about-line">With a strong background in creating dynamic websites.</p>
+           </div>
+    </section>
+    
+            <div class="image">
+                <img src="/images/pic.jpg" alt="Milan" class="image">
+            </div>
+            <div id="Projects" class="container mt-5">
+                <h2 style="color: white; text-align: center; margin-top: 70px;">My Skills</h2>
+                
+                        <div class="carousel">
+                            <div class="carousel-item" data-description=" web interfaces.">
+                                <img src="/images/c.png" alt="c">
+                                
+                            </div>
+                            <div class="carousel-item" data-description="cpp">
+                                <img src="/images/cpp.png" alt="cpp">
+                            </div>
+                            <div class="carousel-item" data-description="html">
+                                <img src="/images/html.png" alt="html">
+                            </div>
+                            <div class="carousel-item" data-description="py">
+                                <img src="/images/py.png" alt="python">
+                            </div>
+                            <div class="carousel-item" data-description="js">
+                                <img src="/images/js.png" alt="js">
+                            </div>
+                            <div class="carousel-item" data-description="flask">
+                                <img src="/images/flask.png" alt="flask">
+                            </div>
+                            <div class="carousel-item" data-description="We develop high-quality Android apps.">
+                                <img src="/images/my.png" alt="Android Application">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tooltip" class="tooltip"></div>
+                </div>
+    <div class="background-customization">
+        <label for="bg-color">Choose Background Color: </label>
+        <input type="color" id="bg-color">
+        <label for="bg-image">Upload Background Image: </label>
+        <input type="file" id="bg-image" accept="image/*">
+    </div>
+
+    <section id="services">
+        <div class="services-container">
+            <h2 class="services-heading " style="color: aliceblue;">Our Services</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>We create professional, responsive, and dynamic websites tailored to your needs.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Delivering pixel-perfect and highly interactive user interfaces for the best user experience.</p>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Real-Time Data Analysis</h3>
+                    <p>Providing real-time insights and data visualization to power informed decision-making.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI-Based Web</h3>
+                    <p>Building AI-powered web solutions that offer intelligent automation and predictive analysis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="projects-container">
+            <h2>My Projects</h2>
+            <div class="search-bar-container">
+                <input type="text" id="search-bar" placeholder="Search projects..." onkeyup="filterProjects()" />
+            </div>
+            <div id="project-list" class="projects-list">
+                <div class="project-item" data-title="Web Development">
+                    <a href="https://github.com/Milan721166/CodeAlpha_Web" target="_blank">
+                        <h3>Web Development</h3>
+                        <p>Description of your Web Development project.</p>
+                    </a>
+                </div>
+                <div class="project-item" data-title="C++ Game Development">
+                    <a href="https://github.com/Milan721166/CODSOFT_CPP" target="_blank">
+                        <h3>C++ Game Development</h3>
+                        <p>Description of your C++ Game Development project.</p>
+                    </a>
+                </div>
+                <div class="project-item" data-title="Real-Time Data Analysis">
+                    <a href="https://github.com/Milan721166/result_calculator" target="_blank">
+                        <h3>Real-Time Data Analysis</h3>
+                        <p>Description of your Real-Time Data Analysis project.</p>
+                    </a>
+                </div>
+                <div class="project-item" data-title="AI-Based Web">
+                    <a href="https://github.com/Milan721166/currency_convetor" target="_blank">
+                        <h3>AI-Based Web</h3>
+                        <p>Description of your AI-Based Web project.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+        <div class="publication-container">
+            <h1 class="text-center"style="color: black;">Publication</h1>
+            <br>
+            <div class="publication-link text-center">
+                <a href="https://mrrjournal.in/uploads/articles/MRR-2024-2-10-9.pdf" target="_blank" class="btn">View Publication (PDF)</a>
+            </div>
+        </div>
+    
+    
+        <footer>
+            <div class="container mt-5">
+                <h2>Contact Me</h2>
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSeK8yBVHnHhXQdQDKdCUgs9V7v4vpKTJDr5wwh9gh-L6YIlKA/formResponse" method="POST" id="contact-form" onsubmit="return redirectToThankYou()">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="entry.2005620554" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="entry.1045781291" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" name="entry.839337160" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" onclick="showConfirmation()" class="btn btn-primary">Message</button>
+                </form>
+            </div>
+        </footer>
+        
+        
+        
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <p>Connect with me:</p>
+                    <p>+91-6296740204</p>
+                    <p>Email: milansahoo7211662005@gmail.com</p>
+                    <a href="mailto:milansahoo7211662005@gmail.com">Email Me</a>
+                    <div class="copyright mt-3">© 2024 Milan Sahoo</div>
+                    <a href="https://www.linkedin.com/in/milan-sahoo-98a912312" target="_blank">LinkedIn</a> |
+                    <a href="https://github.com/Milan721166" target="_blank">GitHub</a> |
+                    <a href="https://www.facebook.com/profile.php?id=100070693405645" target="_blank">Facebook</a>
+                </div>
+            </div>
+            
+            <!-- Removed extra footer tag here -->
+            <div class="footer">
+                <p>&copy; 2024 Milan Sahoo. All Rights Reserved. <a href="https://github.com/milan721166">GitHub</a></p>
+            </div>
+        </footer>  
+    <script src="/static/js/script.js"></script>
+    <script>
+        // Change background color
+        const bgColorInput = document.getElementById('bg-color');
+        const bgImageInput = document.getElementById('bg-image');
+        const homeSection = document.querySelector('.home');
+    
+        // Change background color
+        bgColorInput.addEventListener('input', (e) => {
+            homeSection.style.backgroundImage = ''; // Remove any existing image
+            homeSection.style.backgroundColor = e.target.value;
+        });
+    
+        // Change background image
+        bgImageInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    homeSection.style.backgroundImage = `url(${event.target.result})`;
+                    homeSection.style.backgroundSize = 'cover';
+                    homeSection.style.backgroundPosition = 'center';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    
+        // Function to redirect to the thank-you page after form submission
+        function redirectToThankYou() {
+            // Redirect to thank_you.html after form submission
+            window.location.href = "/templates/thank_you.html";
+            return true; // Ensure the form submits
+        }
+    </script>    
+</body>
+</html>
