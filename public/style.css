@@ -642,6 +642,7 @@ body {
     display: block; /* Show matching projects */
 }
 /* Publication Section */
+/* Base styles */
 .publication-container {
     background-color: #fff;
     padding: 40px;
@@ -669,6 +670,32 @@ body {
 .publication-link .btn:hover {
     background-color: #004085;
     transform: translateY(-5px);
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .publication-container {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 20px; /* Reduce padding */
+        margin: 20px auto; /* Reduce margin */
+    }
+
+    .publication-link .btn {
+        padding: 10px 20px; /* Adjust button padding */
+        font-size: 14px; /* Reduce font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .publication-container {
+        width: 95%; /* Further reduce width for very small screens */
+        padding: 15px; /* Further reduce padding */
+    }
+
+    .publication-link .btn {
+        padding: 8px 15px; /* Smaller button padding for very small screens */
+        font-size: 12px; /* Smaller font size */
+    }
 }
 
 /* Contact Form Section */
